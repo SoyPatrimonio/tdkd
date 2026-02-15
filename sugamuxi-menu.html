@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experiencias Sugamuxi - Colegio Sugamuxi - Soy Patrimonio Sogamoso">
+    <title>Experiencias Sugamuxi - Soy Patrimonio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sugamuxi-menu.css">
+
+    <link rel="icon" href="imagenes/logo_icon.ico">
+</head>
+
+<body>
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- HEADER GLOBAL -->
+    <header class="modern-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <!-- ★★★ Cambiar aquí el título por imagen ★★★ -->
+                <!-- <img src="assets/img/header.png" alt="Soy Patrimonio Logo" class="logo-img"> -->
+                <div class="logo-text">
+                    <h1>SOY PATRIMONIO</h1>
+                    <span>Sogamoso - Descubre, Aprende y Protege</span>
+                </div>
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </button>
+
+            <nav class="nav-container">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mapa-historico.html" class="nav-link">Mapa Histórico</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Parent active -->
+                        <a href="rincon-estudiantil.html" class="nav-link active">
+                            Rincón Estudiantil
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="submenu">
+                            <a href="san-martin-menu.html" class="submenu-link">
+                                <i class="fas fa-university"></i>
+                                San Martín de Tours
+                            </a>
+                            <!-- Current page active -->
+                            <a href="sugamuxi-menu.html" class="submenu-link active">
+                                <i class="fas fa-school"></i>
+                                Colegio Sugamuxi
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="producion_cientifica.html" class="nav-link">Producción Científica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Explorando -ciudad.html" class="nav-link">Explorando la Ciudad</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="school-logo">
+                <i class="fas fa-school"></i>
+            </div>
+            <h1 class="hero-title" id="hero-title">EXPERIENCIAS SUGAMUXI</h1>
+            <p class="hero-subtitle">
+                Un viaje a través de la historia y el patrimonio con la mirada joven
+                de los estudiantes del Colegio Sugamuxi.
+            </p>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="span-arrow"></span>
+            <span class="span-arrow"></span>
+            <span class="span-arrow"></span>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="breadcrumb">
+            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="rincon-estudiantil.html">Rincón Estudiantil</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Colegio Sugamuxi</span>
+        </div>
+
+        <section class="intro-section">
+            <div class="intro-text">
+                <h2>Explorando Nuestras Raíces</h2>
+                <p>
+                    El proyecto "Experiencias Sugamuxi" busca conectar a las nuevas generaciones con
+                    el legado ancestral de nuestra tierra. A través de la investigación de campo y
+                    la recopilación de tradiciones, construimos identidad.
+                </p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number">50+</h3>
+                    <p>Estudiantes</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 class="stat-number">12</h3>
+                    <p>Proyectos</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-award"></i>
+                    <h3 class="stat-number">5</h3>
+                    <p>Reconocimientos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros de Categoría -->
+        <div class="filters-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="arqueologico">Arqueológico</button>
+            <button class="filter-btn" data-filter="arquitectonico">Arquitectónico</button>
+            <button class="filter-btn" data-filter="inmaterial">Inmaterial</button>
+        </div>
+
+        <div class="patrimonio-grid">
+            <!-- Item 1: Museo Arqueológico -->
+            <article class="patrimonio-item" data-category="arqueologico">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="imagenes/museo_arqueologico.jpg" alt="Museo Arqueológico" class="card-img">
+                                <span class="category-tag"><i class="fas fa-monument"></i> Arqueológico</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Museo Arqueológico</h3>
+                                <p class="card-short-desc">Templos y vestigios de la cultura Muisca.</p>
+                                <button class="view-details-btn">Ver Detalles <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <button class="close-details-btn"><i class="fas fa-times"></i></button>
+                            <h3>Museo Arqueológico</h3>
+                            <p class="card-full-desc">
+                                Investigación detallada sobre las piezas de orfebrería y cerámica
+                                que se conservan en el museo, analizando su simbología y función
+                                en la sociedad muisca.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Orfebrería</li>
+                                <li><i class="fas fa-check"></i> Cerámica</li>
+                                <li><i class="fas fa-check"></i> Textiles</li>
+                            </ul>
+                            <a href="#" class="read-more-link">Leer investigación completa</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 2: Plaza de la Villa -->
+            <article class="patrimonio-item" data-category="arquitectonico">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="imagenes/plaza_villa.jpg" alt="Plaza de la Villa" class="card-img">
+                                <span class="category-tag"><i class="fas fa-building"></i> Arquitectónico</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Plaza de la Villa</h3>
+                                <p class="card-short-desc">Centro histórico y administrativo de la ciudad.</p>
+                                <button class="view-details-btn">Ver Detalles <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <button class="close-details-btn"><i class="fas fa-times"></i></button>
+                            <h3>Plaza de la Villa</h3>
+                            <p class="card-full-desc">
+                                Estudio de la evolución urbanística de la plaza principal y los
+                                edificios gubernamentales que la rodean, testigos de la historia republicana.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Arquitectura Colonial</li>
+                                <li><i class="fas fa-check"></i> Espacio Público</li>
+                                <li><i class="fas fa-check"></i> Historia Cívica</li>
+                            </ul>
+                            <a href="#" class="read-more-link">Leer investigación completa</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 3: Festival del Sol -->
+            <article class="patrimonio-item" data-category="inmaterial">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="imagenes/festival_sol.jpg" alt="Festival del Sol" class="card-img">
+                                <span class="category-tag"><i class="fas fa-music"></i> Inmaterial</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Festival del Sol</h3>
+                                <p class="card-short-desc">Tradiciones, danzas y música ancestral.</p>
+                                <button class="view-details-btn">Ver Detalles <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <button class="close-details-btn"><i class="fas fa-times"></i></button>
+                            <h3>Festival del Sol y del Acero</h3>
+                            <p class="card-full-desc">
+                                Recopilación de tradiciones orales, vestimentas típicas y danzas
+                                que se manifiestan durante las festividades de la ciudad.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Danzas Folclóricas</li>
+                                <li><i class="fas fa-check"></i> Gastronomía</li>
+                                <li><i class="fas fa-check"></i> Música Tradicional</li>
+                            </ul>
+                            <a href="#" class="read-more-link">Leer investigación completa</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Item 4: Morca -->
+            <article class="patrimonio-item" data-category="inmaterial">
+                <div class="card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-image">
+                                <img src="imagenes/morca.jpg" alt="Romería a Morca" class="card-img">
+                                <span class="category-tag"><i class="fas fa-praying-hands"></i> Inmaterial</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Romería a Morca</h3>
+                                <p class="card-short-desc">Tradición religiosa y peregrinación.</p>
+                                <button class="view-details-btn">Ver Detalles <i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <button class="close-details-btn"><i class="fas fa-times"></i></button>
+                            <h3>Virgen de la O de Morca</h3>
+                            <p class="card-full-desc">
+                                Documentación de la peregrinación al santuario de Morca, una de las
+                                tradiciones religiosas más arraigadas en la comunidad campesina.
+                            </p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Religiosidad Popular</li>
+                                <li><i class="fas fa-check"></i> Caminatas</li>
+                                <li><i class="fas fa-check"></i> Mercado Tradicional</li>
+                            </ul>
+                            <a href="#" class="read-more-link">Leer investigación completa</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER GLOBAL -->
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>SOY PATRIMONIO</h3>
+                <p>
+                    Plataforma educativa para descubrir y proteger el patrimonio histórico
+                    y cultural de Sogamoso, Boyacá.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explorar</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="mapa-historico.html"><i class="fas fa-map-marker-alt"></i> Mapa Histórico</a></li>
+                    <li><a href="rincon-estudiantil.html"><i class="fas fa-graduation-cap"></i> Rincón Estudiantil</a>
+                    </li>
+                    <li><a href="Explorando -ciudad.html"><i class="fas fa-city"></i> Explorando la Ciudad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Colegios</h3>
+                <ul class="footer-links">
+                    <li><a href="san-martin-menu.html"><i class="fas fa-university"></i> San Martín de Tours</a></li>
+                    <li><a href="sugamuxi-menu.html"><i class="fas fa-school"></i> Colegio Sugamuxi</a></li>
+                    <li><a href="producion_cientifica.html"><i class="fas fa-book"></i> Producción Científica</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-envelope"></i> info@soypatrimonio.org</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +57 123 456 7890</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Sogamoso, Boyacá</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Soy Patrimonio - Sogamoso. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/global.js"></script>
+    <script src="js/sugamuxi-menu.js"></script>
+</body>
+
+</html>
